@@ -1,12 +1,18 @@
-#BrainsDir
+# Built application files
+*.apk
+*.ap_
+*.aab
 
-#Gradle files
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle files
 .gradle/
 
-#User-specific configurations
+# User-specific configurations
 *.iml
 
-#OS-specific files
+# OS-specific files
 .DS_Store
 .DS_Store?
 ._*
@@ -14,3 +20,13 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
