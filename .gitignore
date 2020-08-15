@@ -1,78 +1,31 @@
-<<<<<<< HEAD
 # Built application files
-build/
-||||||| de7a29d
-#BrainsDir
-=======
-# Built application files
-*.apk
-*.ap_
-*.aab
->>>>>>> conflict
+/*/build/
 
-<<<<<<< HEAD
-# Files for the ART/Dalvik VM
-*.dex
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
 
-# External native build folder generated in Android Studio 2.2 and later
-.externalNativeBuild
-
-# Gradle files
-||||||| de7a29d
-#Gradle files
-=======
 # Local configuration file (sdk path, etc)
 local.properties
 
-# Gradle files
->>>>>>> conflict
+# Gradle generated files
 .gradle/
+build/
+gradle/
+gradlew
+gradle.properties
+gradlew.bat
 
-<<<<<<< HEAD
+app/libs
+app/src/test/
+app/src/androidTest/
+
 # Signing files
 .signing/
 
 # User-specific configurations
-||||||| de7a29d
-#User-specific configurations
-=======
-# User-specific configurations
->>>>>>> conflict
+.idea/
 *.iml
 
-<<<<<<< HEAD
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log Files
-*.log
-
-# Android Studio Navigation editor temp files
-.navigation/
-
-# Android Studio captures folder
-captures/
-
-# Keystore files
-# Uncomment the following lines if you do not want to check your keystore files in.
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Version control
-vcs.xml
-||||||| de7a29d
-#OS-specific files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-=======
 # OS-specific files
 .DS_Store
 .DS_Store?
@@ -81,14 +34,3 @@ Thumbs.db
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Version control
-vcs.xml
-
-# lint
-lint/intermediates/
-lint/generated/
-lint/outputs/
-lint/tmp/
-lint/reports/
->>>>>>> conflict
