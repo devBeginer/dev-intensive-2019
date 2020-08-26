@@ -1,8 +1,6 @@
 package ru.skillbranch.devintensive
 
-import android.app.Activity
 import android.graphics.Color
-import android.graphics.ColorFilter
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +11,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
-import ru.skillbranch.devintensive.extensions.hideKeyBoard
+import ru.skillbranch.devintensive.extensions.hideKeyboard
 import ru.skillbranch.devintensive.models.Bender
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, TextView.OnEditorActionListener{
@@ -102,7 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, TextView.OnEdito
             val (r, g, b) = color
             benderImage.setColorFilter(Color.rgb(r, g, b), PorterDuff.Mode.MULTIPLY)
             textTXT.text = phrase
-            hideKeyBoard()
+            hideKeyboard()
             true;
         } else{
             false;
