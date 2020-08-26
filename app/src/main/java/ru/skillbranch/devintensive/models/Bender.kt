@@ -21,15 +21,11 @@ class Bender (var status:Status = Status.NORMAL, var question: Question = Questi
     }
 
     fun listenAnswer(answer: String) : Pair<String, Triple<Int, Int, Int>>{
-        /*return if(question.answer.contains(answer.toLowerCase())){
-            if (question.isValidAnswer(answer)){
-                question = question.nextQuestion()
-                "Отлично - ты справился\n${question.question}" to status.color
-            }else{
-                showWarning() to status.color
-            }
+        return if(question.answer.contains(answer.toLowerCase())){
+            question = question.nextQuestion()
+            "Отлично - ты справился\n${question.question}" to status.color
         }else if (question == Question.IDLE){
-            "${question.question}" to status.color
+            question.question to status.color
         }else if (status != Status.CRITICAL){
             status = status.nextStatus()
             "Это не правильный ответ\n${question.question}" to status.color
@@ -37,23 +33,6 @@ class Bender (var status:Status = Status.NORMAL, var question: Question = Questi
             status = Status.NORMAL
             question = Question.NAME
             "Это неправильный ответ. Давай все по новой\n${question.question}" to status.color
-        }*/
-        return if (question.isValidAnswer(answer)){
-            if(question.answer.contains(answer.toLowerCase())){
-                question = question.nextQuestion()
-                "Отлично - ты справился\n${question.question}" to status.color
-            }else if (question == Question.IDLE){
-                "${question.question}" to status.color
-            }else if (status != Status.CRITICAL){
-                status = status.nextStatus()
-                "Это не правильный ответ\n${question.question}" to status.color
-            }else {
-                status = Status.NORMAL
-                question = Question.NAME
-                "Это неправильный ответ. Давай все по новой\n${question.question}" to status.color
-            }
-        }else{
-            showWarning() to status.color
         }
     }
     enum class Status(val color: Triple<Int, Int, Int>){
